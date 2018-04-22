@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+{% load my_extra %}
+  {% block body_block %}
+    <div class="uk-section uk-section-muted uk-padding">
+      <h1>WELCOME TO HOME PAGE!</h1>
+      <h2>{{ text|cutit:'world' }}</h2>
+      <h2>{{ number|add:60 }}</h2>
+    </div>
+  {% endblock %}
